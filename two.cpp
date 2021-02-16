@@ -20,7 +20,7 @@ int main()
         
         sort(arr,arr+n);
         
-    int res=arr[m-1]-arr[0];
+    int res=INT_MAX;
     for(int i=1;(i+m-1)<n;i++)
     res=min(res,(arr[i+m-1]-arr[i]));
     
